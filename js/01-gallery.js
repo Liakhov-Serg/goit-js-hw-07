@@ -5,6 +5,8 @@ console.log(galleryDiv);
 
 const Markup = createMarkup (galleryItems);
 
+galleryDiv.insertAdjacentHTML("beforeend", Markup);
+
 function createMarkup(galleryItems) {return galleryItems.map(
   ({ preview, original, description }) =>
     `<div class="gallery__item">
@@ -20,6 +22,7 @@ function createMarkup(galleryItems) {return galleryItems.map(
 )
 .join("");
 }
+
 console.log(Markup);
 
 // console.log(galleryItems);
