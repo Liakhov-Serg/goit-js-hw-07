@@ -15,5 +15,11 @@ function createMarkup(galleryItems) {return galleryItems.map(
 
 .join("");
 }
-var lightbox = new SimpleLightbox('.gallery a', {  });
+var lightbox = new SimpleLightbox('.gallery a', { }
+);
 
+let Lightbox = new SimpleLightbox('.gallery a',{
+    captions: true,
+    captionsData: "alt",
+    captionDelay: 250,
+});
